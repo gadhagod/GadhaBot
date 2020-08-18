@@ -2,7 +2,7 @@ import covidbackend
 
 def help():
   print("Help query")
-  return "Hi {0.author.mention}!, Thanks for using the GadhaBot! It can do a lot of miscellaneous things and is still develpment. \n\n!invite lets you invite this bot to another server.\n!covidCases will tell you the number of Coronavirus cases there are in the world.\n!covidDeaths will tell you the number of coronavirus deaths there are in the world\n\nThe source code of this bot is open source. View it here: "
+  return "Hi {0.author.mention}!, Thanks for using the GadhaBot! It can do a lot of miscellaneous things and is still development. \n\n!invite lets you invite this bot to another server.\n!covidCases will tell you the number of Coronavirus cases there are globally.\n!covidDeaths will tell you the number of coronavirus deaths there are globally\n!lastUpdate will tell you when this bot was last updated. \nThe source code of this bot is open source. View it here: github.com/gadhagod/GadhaBot/"
 
 def invite():
   print("Invite query")
