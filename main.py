@@ -2,15 +2,16 @@ import discord
 import covidbackend
 import messages
 import os
-import time
+from webapp import keep_running
+from timestamp import last_update
 
-t = time.localtime()
-current_time = time.strftime("%H:%M:%S", t)
 covidobj = messages.covid()
+varlastupdate = last_update()
+varlastupdate = str(varlastupdate)
 
 class MyClient(discord.Client):
     async def on_ready(self):
-        print("Connected: " + current_time)
+        print("Connected to server: " + varlastupdate)
 
     async def on_message(self, message):
         if message.content == '!help':
@@ -20,11 +21,18 @@ class MyClient(discord.Client):
             print("Invite query")
             await message.channel.send(messages.invite().format(message))
 
+        if message.content == '!lastUpdate':
+            print("Last update query")
+            await message.channel.send(("Last updated: " + varlastupdate).format(message))
+
         if message.content == '!covidCases':
             await message.channel.send(covidobj.cases().format(message))
         if message.content == '!covidDeaths':
             await message.channel.send(covidobj.deaths().format(message))  
 
 client = MyClient()
+keep_running()
 token = os.environ.get("DISCORD_BOT_SECRET")
 client.run(token)
+
+webapp()
