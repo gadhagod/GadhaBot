@@ -5,7 +5,7 @@ The source code of GadhaBot, a discord bot with many miscellaneous functions.
 https://github.com/gadhagod/GadhaBot/blob/master/commands.txt
 
 # Packages necessary
-discord, flask
+discord, flask, feedparser
 
 # Invite
 click this link to invite this bot to your server: https://discord.com/oauth2/authorize?client_id=714911868455747629&permissions=0&scope=bot
