@@ -1,6 +1,9 @@
 # GadhaBot
 The source code of GadhaBot, a discord bot with many miscellaneous functions.
 
+# Bot commands
+https://github.com/gadhagod/GadhaBot/blob/master/commands.txt
+
 # Packages necessary
 discord, flask
 
