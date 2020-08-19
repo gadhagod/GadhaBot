@@ -20,8 +20,8 @@ Then create .env:
 $ sudo nano .env
 
 Write the following into the file:
-DISCORD_BOT_SECRET=<sercret bot token>
-Replace <secret bot token> with your bot's token. 
+DISCORD_BOT_SECRET= sercret bot token
+Replace 'secret bot token' with your bot's token. 
   
 Run main.py:
 python3 main.py
