@@ -5,6 +5,7 @@ import os
 from webapp import keep_running
 from timestamp import last_update
 from news import headlines
+import countries
 
 
 varlastupdate = last_update()
@@ -37,6 +38,14 @@ class MyClient(discord.Client):
 
       if message.content == '!news' or message.content == '!headlines':
           await message.channel.send(str(headlines()).format(message))
+
+      if message.content.startswith('!population'):
+          await message.channel.send(str(countries.population(message.content)))
+
+      if message.content.startswith('!capital'):
+          await message.channel.send(str(countries.capital(message.content)))
+
+
 
 client = MyClient()
 keep_running()
