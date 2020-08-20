@@ -1,14 +1,28 @@
+<> = required, / = altername command call
+
 !help / !gadhahelp
 View info on this bot
+
 !commands / !gadhacommands
 View commands on this bot
+
 !invite
 Invite this bot to another server
+
 !lastUpdated
 See when this bot was last updated
+
 !covidCases
 See how many covid-19 cases there are globally
+
 !covidDeaths
 See how many covid-19 deaths there are globally
+
+!population <country>
+Find the population of a country
+
+!capital <country>
+Find the capital of a country
+
 !news
 Find BBC headlines
