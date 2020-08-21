@@ -6,7 +6,6 @@ from webapp import keep_running
 from timestamp import last_update
 from news import headlines
 import countries
-from rockset import Client, Q, F
 import json
 
 varlastupdate = last_update()
@@ -50,11 +49,27 @@ class MyClient(discord.Client):
       if ((message.content).lower()).startswith('!capital'):
         await message.channel.send(str(countries.capital(message.content)))
 
-client = MyClient()
+# crete a dummy emoty document
+#doc = {'name': 'aarav'}
+#docs = [doc]
+
+#get rockset key from .env
+#key = os.environ.get("ROCKSET_SECRET")
+
+#create rockset client obj
+#rs = Client(api_key=key, #api_server="api.rs2.usw2.rockset.com")
+
+#users = rs.retrieve('ServerMembers')
+#print(users)
+
+#add doc to rockset
+#ret = rs.Collection.add_docs('ServerMembers', docs)
+
+#client = MyClient()
 
 #get discod bot key from .env
-token = os.environ.get("DISCORD_BOT_SECRET")
-client.run(token)
+#token = os.environ.get("DISCORD_BOT_SECRET")
+#client.run(token)
 
 keep_running()
 webapp()
