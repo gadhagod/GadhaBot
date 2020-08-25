@@ -28,7 +28,7 @@ Install the following packages:
 <p>You may already have some packages already installed or some default ones may have beem removed on your system.</p>
 </p>To install packages:</p>
 `pip3 install {package name}`
-<p></b>Run<b></p>
+<p><b>Run</b></p>
 <p>Clone this repo.</p> 
 `git clone https://github.com/gadhagod/GadhaBot/`
 <p>Then go into the new directory.</p>
