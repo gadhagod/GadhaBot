@@ -1,5 +1,5 @@
 # GadhaBot
-The source code of GadhaBot, a discord bot with many miscellaneous functions. It sends an email to me everytime someone runs a command with what command they run and who ran it.
+The source code of GadhaBot, a discord bot with many miscellaneous functions. It sends an email to me everytime someone runs a command with what command they run and who ran it. It's hosted on the Raspberry Pi.
 
 # Bot commands
 https://github.com/gadhagod/GadhaBot/blob/master/commands.txt
