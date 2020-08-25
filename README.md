@@ -27,14 +27,20 @@ Install the following packages:
 </ul>
 <p>You may already have some packages already installed or some default ones may have beem removed on your system.</p>
 </p>To install packages:</p>
-`pip3 install {package name}`<br>
-<p><b>Run</b></p>
-<p>Clone this repo.</p> 
-`git clone https://github.com/gadhagod/GadhaBot/`
-<p>Then go into the new directory.</p>
-`cd gadhabot` <p> or </p> `cd GadhaBot`
-Edit the .env file.
-`nano .env`
-<p>Put in your credentials and token. Exit the editor by pressing 'control' and 'x' at the same time.</p>
-Then run main.py.
-`python3 main.py
+
+    pip install {package name}
+<p><b>Run</p></b>
+<p>Clone this repo</p>
+
+    git clone https://github.com/gadhagod/GadhaBot
+<p>Open the repo on your computer</p>
+
+    cd gadhabot
+<p>Edit the .env</p>
+
+    nano .env
+<p>Put in your email credentials and bot token.</p>
+<p>Exit the editor by pressing "control" and "x" at the same time.</p>
+<p>Run main.py</p>
+
+    python3 main.py
