@@ -7,6 +7,7 @@ This list is constantly changing and being added to, because it's still in devel
   <li>Can tell you how many COVID-19 deaths and cases there are real-time</li>
   <li>Can tell you the population and capital of any country</li>
   <li>Can tell you the headlines from BBC news</li>
+  <li>Many more commands
   <li>Super-fast results</li>
 </ul>
 <h2>Invite</h2>
