@@ -36,8 +36,8 @@ Install the following packages:
     git clone https://github.com/gadhagod/GadhaBot
 <p>Open the repo on your computer</p>
 
-    cd gadhabot
-<p>Edit the .env</p>
+    cd GadhaBot
+<p>Edit the .env file</p>
 
     nano .env
 <p>Put in your email credentials and bot token.</p>
