@@ -21,4 +21,4 @@ $ sudo nano .env
 
 Write the following into the file:
 DISCORD_BOT_SECRET=sercret bot token
-Replace 'secret bot token' with your bot's token. Make sure there is no spaces between the 'DISCORD_BOT_SECRET' and '=' and your bot token
+Change the values of the enviroment variables to your email credentials and your bot token.
