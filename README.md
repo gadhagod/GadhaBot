@@ -19,6 +19,4 @@ $ cd GadhaBot
 Then create .env:
 $ sudo nano .env
 
-Write the following into the file:
-DISCORD_BOT_SECRET=sercret bot token
 Change the values of the enviroment variables to your email credentials and your bot token.
