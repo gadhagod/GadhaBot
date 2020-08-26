@@ -1,13 +1,16 @@
 <> = required, / = altername command call
 
-!help / !gadhahelp
+!help / !gadhaHelp
 View info on this bot
 
-!commands / !gadhacommands
+!commands / !gadhaCommands
 View commands on this bot
 
 !invite
 Invite this bot to another server
+
+!sourceCode
+View the source code of this bot
 
 !lastUpdated
 See when this bot was last updated
