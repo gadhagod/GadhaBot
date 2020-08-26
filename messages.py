@@ -17,10 +17,6 @@ class covid():
     return self.varcases + " global cases"
 
   def deaths(self):
-    print("Covid Cases query")
-    return self.varcases + " global cases"
-
-  def deaths(self):
     print("Covid Deaths query")
     return self.vardeaths + " global deaths"
 
@@ -29,3 +25,8 @@ def commands():
   commandslist=open("commands.txt", "r")
   commandslist = commandslist.read()
   return commandslist
+
+def code():
+  print('Source code query')
+  message = 'The code for this bot is open-source. View it here: https://github.com/gadhagod/GadhaBot/'
+  return message
