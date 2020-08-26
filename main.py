@@ -35,6 +35,8 @@ class MyClient(discord.Client):
 		if (message.content).lower() == '!lastupdated':
 			await message.channel.send(("Last updated: " + varlastupdate).format(message))
 			sendemail(email, reciever, password, 'GadhaBot', 'GadhaBot last update query from ' + str(message.author))
+			print('Last updated query')
+
 
 		if (message.content).lower() == '!covidcases':
 			covidobj = messages.covid()
@@ -57,6 +59,10 @@ class MyClient(discord.Client):
 		if (message.content.lower()).startswith('!capital'):
 			await message.channel.send(str(countries.capital(message.content)))
 			sendemail(email, reciever, password, 'GadhaBot', 'GadhaBot capital query from ' + str(message.author))
+
+		if (message.content.lower()) == '!sourcecode':
+			await message.channel.send(messages.code())
+			sendemail(email, reciever, password, 'GadhaBot', 'GadhaBot source code query')
 
 client = MyClient()
 keep_running()
