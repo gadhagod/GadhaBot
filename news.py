@@ -18,7 +18,7 @@ def headlines():
 
   for article in feed['entries'][:articles]:
     title = article['title']
-    article_texts = article_texts + title + '\n'
+    article_texts = article_texts + title + '.' + '\n'
     
   print('News query')
   return article_texts
