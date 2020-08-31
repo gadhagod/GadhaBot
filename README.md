@@ -56,8 +56,3 @@ This list is constantly changing and being added to, because it's still in devel
 <p>Run main.py</p>
 
     python3 main.py
-    
-<details>
-  <summary>Epcot Center</summary>
-  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-</details>
