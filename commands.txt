@@ -29,3 +29,6 @@ Find the capital of a country
 
 !news
 Find BBC headlines
+
+!googleSearch / !search <query>
+Do a google search
