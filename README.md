@@ -15,8 +15,8 @@ This list is constantly changing and being added to, because it's still in devel
 <p>You can invite this bot to any server. To invite, you click <a href="https://discord.com/oauth2/authorize?client_id=714911868455747629&permissions=0&scope=bot">here</a> or type !invite in a server that it is already in. </p>
 
 <h2>Environment</h2>
-<p>Environment variables are used for security purposes. You don't want people seeing your email credentials or your bot token. If someone gets your bot token, they have full control over your bot.<br>
-  <b>Windows</b><br>
+<p>Environment variables are used for security purposes. You don't want people seeing your email credentials or your bot token. If someone gets your bot token, they have full control over your bot.</p>
+  <p><b>Windows</b><br>
 Change the value of the environment variables to your email credentials and your bot token. Make sure there are no spaces between <kbd>=</kbd> and the other characters next to it. </p>
 
 ```
