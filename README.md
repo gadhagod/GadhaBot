@@ -15,7 +15,28 @@ This list is constantly changing and being added to, because it's still in devel
 <p>You can invite this bot to any server. To invite, you click <a href="https://discord.com/oauth2/authorize?client_id=714911868455747629&permissions=0&scope=bot">here</a> or type !invite in a server that it is already in. </p>
 
 <h2>Environment</h2>
-<p>The only thing you need to change after downloading this file onto your computer is the .env file. Environment variables are used for security purposes. You don't want people seeing your email credentials or your bot token. If someone gets your bot token, they have full control over your bot, so change the value of the environment variables to your email credentials and your bot token. Make sure there are no spaces between the '=' sign and the other characters next to it.</p>
+<p>Environment variables are used for security purposes. You don't want people seeing your email credentials or your bot token. If someone gets your bot token, they have full control over your bot.<br>
+  <b>Windows</b><br>
+Change the value of the environment variables to your email credentials and your bot token. Make sure there are no spaces between <kbd>=</kbd> and the other characters next to it. </p>
+
+```
+DISCORD_BOT_SECRET={bot token}
+EMAIL={your email}
+PASSWORD={your email's password}
+RECIEVER={your email}
+```
+<p><b>Mac</b></p>
+<p>Mac doesn't work with .env files. To make environment variables permanent, make the .bashrc file.</p>
+
+    nano ~/.bashrc
+<p>Put in your credentials and bot token.</p>
+
+    export DISCORD_BOT_SECRET={bot token}
+    export EMAIL={your email}
+    export RECIEVER={your email's password}
+    export PASSWORD={your email}
+<p>When you want to run main.py, make sure you are in the bash shell. To enter the bash shell, run <code>bash</code> in your terminal.</p>
+
 
 <h2>Emails</h2>
 <p>Everytime someone runs a command, an email will be sent to you containing what command was run and who ran it. If you don't want to enable emails, don't worry about this section. To enable emails, go to this <a href="https://myaccount.google.com/u/5/lesssecureapps?gar=1">link</a> and enable less secure app access.</p>
@@ -40,6 +61,9 @@ This list is constantly changing and being added to, because it's still in devel
 </p>To install packages:</p>
 
     pip install {package name}
+<p>or</p>
+
+    pip3 install {package name}
 <p><b>Run</p></b>
 <p>Clone this repo</p>
 
@@ -47,12 +71,12 @@ This list is constantly changing and being added to, because it's still in devel
 <p>Open the repo on your computer</p>
 
     cd GadhaBot
-<p>Edit the .
-  file</p>
+<p>If you are on mac, ignore the rest of these steps. </p>
+<p>Edit the .env file</p>
 
     nano .env
-<p>Put in your email credentials and bot token.</p>
-<p>Exit the editor by pressing <kbd>^</kbd> and <kbd>x</kbd> at the same time.</p>
-<p>Run main.py</p>
+<p>Put in your email credentials and bot token.<br>
+Exit the editor by pressing <kbd>^</kbd> and <kbd>x</kbd> at the same time.<br>
+Run main.py</p>
 
     python3 main.py
