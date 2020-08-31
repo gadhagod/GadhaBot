@@ -7,6 +7,7 @@ from timestamp import last_update
 from news import headlines
 import countries
 from easyemail import sendemail
+from search import gsearch
 
 varlastupdate = last_update()
 varlastupdate = str(varlastupdate)
@@ -37,7 +38,6 @@ class MyClient(discord.Client):
 			sendemail(email, reciever, password, 'GadhaBot', 'GadhaBot last update query from ' + str(message.author))
 			print('Last updated query')
 
-
 		if (message.content).lower() == '!covidcases':
 			covidobj = messages.covid()
 			await message.channel.send(covidobj.cases().format(message))
@@ -63,6 +63,13 @@ class MyClient(discord.Client):
 		if (message.content.lower()) == '!sourcecode':
 			await message.channel.send(messages.code())
 			sendemail(email, reciever, password, 'GadhaBot', 'GadhaBot source code query')
+
+		if (message.content.lower()).startswith('!googlesearch') or (message.content.lower()).startswith('!search'):
+			content = message.content
+			content = content.replace('!googlesearch ','')
+			content = content.replace('!search ','')
+			await message.channel.send(gsearch(content))
+			sendemail(email, reciever, password, 'GadhaBot', 'GadhaBot google search query')
 
 client = MyClient()
 keep_running()
