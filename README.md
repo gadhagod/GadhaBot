@@ -14,6 +14,12 @@ This list is constantly changing and being added to, because it's still in devel
 <h2>Invite</h2>
 <p>You can invite this bot to any server. To invite, you click <a href="https://discord.com/oauth2/authorize?client_id=714911868455747629&permissions=0&scope=bot">here</a> or type !invite in a server that it is already in. </p>
 
+<h2>Emails</h2>
+<p>Everytime someone runs a command, an email will be sent to you containing what command was run and who ran it. If you don't want to enable emails, don't worry about this section. To enable emails, go to this <a href="https://myaccount.google.com/u/5/lesssecureapps?gar=1">link</a> and enable less secure app access.</p>
+<div align="center">
+<img src="README images/LessSecureAppAcess.png" style="vertical-align:middle"/>
+</div>
+
 <h2>Environment</h2>
 <p>Environment variables are used for security purposes. You don't want people seeing your email credentials or your bot token. If someone gets your bot token, they have full control over your bot.</p>
   <p><b>Windows</b><br>
@@ -26,7 +32,7 @@ PASSWORD={your email's password}
 RECIEVER={your email}
 ```
 <p><b>Mac</b></p>
-<p>Mac doesn't work with .env files. To make environment variables permanent, make the .bashrc file.</p>
+<p>Mac doesn't work with .env files. You have to use the <code>export</code> command. To make environment variables permanent, make .bashrc.</p>
 
     nano ~/.bashrc
 <p>Put in your credentials and bot token.</p>
@@ -36,13 +42,6 @@ RECIEVER={your email}
     export RECIEVER={your email's password}
     export PASSWORD={your email}
 <p>When you want to run main.py, make sure you are in the bash shell. To enter the bash shell, run <code>bash</code> in your terminal.</p>
-
-
-<h2>Emails</h2>
-<p>Everytime someone runs a command, an email will be sent to you containing what command was run and who ran it. If you don't want to enable emails, don't worry about this section. To enable emails, go to this <a href="https://myaccount.google.com/u/5/lesssecureapps?gar=1">link</a> and enable less secure app access.</p>
-<div align="center">
-<img src="README images/LessSecureAppAcess.png" style="vertical-align:middle"/>
-</div>
 
 <h2>Download & Run</h2>
 <p><h4>Packages</h4></p>
