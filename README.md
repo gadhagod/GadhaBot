@@ -1,5 +1,11 @@
 <h1 align="center">GadhaBot</h1>
-<p><center>A discord bot with many miscellaneous funtions</center></p>
+<p align="center">
+  <b><a href="https://discord.com/oauth2/authorize?client_id=714911868455747629&permissions=0&scope=bot">Invite</a> | 
+    <a href="https://github.com/gadhagod/GadhaBot/blob/master/commands.txt">Commands</a> |
+    <a href="https://github.com/gadhagod/GadhaBot">Code</a>
+  </b>
+</p>
+
 <hr>
 <h2>Features</h2>
 This list is constantly changing and being added to, because it's still in developement. Here are the features so far:
@@ -12,9 +18,6 @@ This list is constantly changing and being added to, because it's still in devel
   <li>Many more commands
   <li>Super-fast results</li>
 </ul>
-
-<h2>Invite</h2>
-<p>You can invite this bot to any server. To invite, you click <a href="https://discord.com/oauth2/authorize?client_id=714911868455747629&permissions=0&scope=bot">here</a> or type !invite in a server that it is already in. </p>
 
 <h2>Creating the Bot</h2>
 <p>First, you have to create your bot. To do this, go to the <a href="https://discord.com/developers/applications">Discord Developer Portal</a> and click <kbd>New Application</kbd> on the top right of the page. Now name your application and hit <kbd>Create</kbd>.</p>
