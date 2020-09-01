@@ -1,4 +1,5 @@
 <h1 align="center">GadhaBot</h1>
+<p><center>A discord bot with many miscellaneous funtions</center></p>
 <hr>
 <h2>Features</h2>
 This list is constantly changing and being added to, because it's still in developement. Here are the features so far:
@@ -25,6 +26,11 @@ This list is constantly changing and being added to, because it's still in devel
 <div align="center">
 <img src="README images/BotToken.png" style="vertical-align:middle"/>
 </div>
+
+<h2>Cloning</h2>
+<p>Clone this repo</p>
+
+    git clone https://github.com/gadhagod/GadhaBot
 
 <h2>Emails</h2>
 <p>Everytime someone runs a command, an email will be sent to you containing what command was run and who ran it. If you don't want to enable emails, don't worry about this section. To enable emails, go to this <a href="https://myaccount.google.com/u/5/lesssecureapps?gar=1">link</a> and enable less secure app access.</p>
@@ -77,9 +83,6 @@ RECIEVER={your email}
 
     pip3 install {package name}
 <p><b>Run</p></b>
-<p>Clone this repo</p>
-
-    git clone https://github.com/gadhagod/GadhaBot
 <p>Open the repo on your computer.</p>
 
     cd GadhaBot
