@@ -31,9 +31,10 @@ This list is constantly changing and being added to, because it's still in devel
 </div>
 
 <h2>Cloning</h2>
-<p>Clone this repo</p>
+<p>Clone this repo and cd to it</p>
 
     git clone https://github.com/gadhagod/GadhaBot
+    cd GadhaBot
 
 <h2>Emails</h2>
 <p>Everytime someone runs a command, an email will be sent to you containing what command was run and who ran it. If you don't want to enable emails, don't worry about this section. To enable emails, go to this <a href="https://myaccount.google.com/u/5/lesssecureapps?gar=1">link</a> and enable less secure app access.</p>
