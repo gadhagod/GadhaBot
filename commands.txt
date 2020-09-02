@@ -1,4 +1,4 @@
-<> = required, / = altername command call
+<> = required, / = alternate command call
 
 !help / !gadhaHelp
 View info on this bot
