@@ -72,7 +72,8 @@ RECIEVER={your email}
     <li>flask</li>
     <li>discord</li>
     <li>countryinfo</li>
-    <li>bs4</li>
+    <li>beautifulsoup4</li>
+    <li>feedparser</li>
     <li>requests</li>
     <li>google</li>
   </ul>
