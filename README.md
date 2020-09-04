@@ -65,6 +65,11 @@ RECIEVER={your email}
     export PASSWORD={your email}
 <p>When you want to run main.py, make sure you are in the bash shell. To enter the bash shell, run <code>bash</code> in your terminal.</p>
 
+<h2>Website</h2>
+<p>On GadhaBot's website, you can view features, versions, and more.<br>
+<a href="https://gadhabot.gadhagod.repl.co/">GadhaBot's website</a><br>
+<a href="https://github.com/gadhagod/GadhaBot/tree/master/Website">GadhaBot's website source code</a>
+
 <h2>Download & Run</h2>
 <p><h4>Packages</h4></p>
 <details>
@@ -100,3 +105,9 @@ Exit the editor by pressing <kbd>^</kbd> and <kbd>x</kbd> at the same time.<br>
 Run main.py</p>
 
     python3 main.py
+
+<br><br>
+
+<center>    
+  <a href="http://gadhagod.repl.co/"><img src="Logos/logo.png" legnth=40% width=40%></a>
+</center>
