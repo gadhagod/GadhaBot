@@ -108,6 +108,6 @@ Run main.py</p>
 
 <br><br>
 
-<center>    
+<p align="center">
   <a href="http://gadhagod.repl.co/"><img src="Logos/logo.png" legnth=40% width=40%></a>
-</center>
+</p>
