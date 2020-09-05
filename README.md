@@ -63,7 +63,7 @@ RECIEVER={your email}
     export EMAIL={your email}
     export RECIEVER={your email's password}
     export PASSWORD={your email}
-<p>When you want to run main.py, make sure you are in the bash shell. To enter the bash shell, run <code>bash</code> in your terminal.</p>
+<p>When you want to run discordbot.py, make sure you are in the bash shell. To enter the bash shell, run <code>bash</code> in your terminal.</p>
 
 <h2>Website</h2>
 <p>On GadhaBot's website, you can view features, versions, and more.<br>
@@ -102,9 +102,9 @@ RECIEVER={your email}
     nano .env
 <p>Put in your email credentials and bot token.<br>
 Exit the editor by pressing <kbd>^</kbd> and <kbd>x</kbd> at the same time.<br>
-Run main.py</p>
+Run discordbot.py</p>
 
-    python3 main.py
+    python3 discordbot.py
 
 <br><br>
 
