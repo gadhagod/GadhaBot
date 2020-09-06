@@ -19,6 +19,12 @@ This list is constantly changing and being added to, because it's still in devel
   <li>Super-fast results</li>
 </ul>
 
+<h2>Cloning</h2>
+<p>Clone this repo and cd to it</p>
+
+    git clone https://github.com/gadhagod/GadhaBot
+    cd GadhaBot
+
 <h2>Environment Variables</h2>
 <p>Environment variables are used for security purposes. You don't want people seeing your email credentials, GitHub token, or bot token. </p><br>
 To create a discord bot and find your bot token, click <a href="DiscordBotCreate.md">here</a>.<br> To create a GitHub API token, click <a href="GitHubAPI.md">here</a>.</p>
@@ -46,12 +52,6 @@ Change the values of the environment variables in file .env to your email creden
     export RECIEVER={your email's password}
     export PASSWORD={your email}
 <p>When you want to run code, make sure you are in the bash shell. To enter the bash shell, run <code>bash</code> in your terminal.</p>
-
-<h2>Cloning</h2>
-<p>Clone this repo and cd to it</p>
-
-    git clone https://github.com/gadhagod/GadhaBot
-    cd GadhaBot
 
 <h2>Emails</h2>
 <p>Everytime someone runs a command, an email will be sent to you containing what command was run and who ran it. If you don't want to enable emails, don't worry about this section. To enable emails, go to this <a href="https://myaccount.google.com/u/5/lesssecureapps?gar=1">link</a> and enable less secure app access.</p>
