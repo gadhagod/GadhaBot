@@ -2,7 +2,6 @@ import discord
 import covidbackend
 import messages
 import os
-from webapp import keep_running
 from timestamp import last_update
 from news import headlines
 import countries
@@ -87,7 +86,5 @@ class MyClient(discord.Client):
 			sendemail(email, reciever, password, 'GadhaBot', 'GadhaBot issue query')
 
 client = MyClient()
-keep_running()
 token = os.environ.get("DISCORD_BOT_SECRET")
 client.run(token)
-webapp()
