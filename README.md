@@ -19,8 +19,33 @@ This list is constantly changing and being added to, because it's still in devel
   <li>Super-fast results</li>
 </ul>
 
-<h2>Creating a Bot</h2>
-<p>First, you have to create a bot. Click <a href="discord.md">here</a> to learn how to create a bot.</p>
+<h2>Environment Variables</h2>
+<p>Environment variables are used for security purposes. You don't want people seeing your email credentials, GitHub token, or bot token. </p><br>
+To create a discord bot and find your bot token, click <a href="DiscordBotCreate.md">here</a>.<br> To create a GitHub API token, click <a href="GitHubAPI.md">here</a>.</p>
+<p><b>Windows</b><br>
+Change the values of the environment variables in file .env to your email credentials, GitHub token, and your bot token. Make sure there are no spaces between <kbd>=</kbd> and the other characters next to it. 
+  
+    nano .env
+ <br>
+ 
+    DISCORD_BOT_SECRET={bot token}
+    GITHUB_SECRET={github token}
+    EMAIL={your email}
+    PASSWORD={your email's password}
+    RECIEVER={your email}
+
+<p><b>Mac/Linux</b></p>
+<p>For mac or linux, you have to use the <code>export</code> command. To make environment variables permanent, create/edit file .bashrc.</p>
+
+    nano ~/.bashrc
+<p>Put in your credentials and bot token.</p>
+
+    export DISCORD_BOT_SECRET={bot token}
+    export GITHUB_SECRET={github token}
+    export EMAIL={your email}
+    export RECIEVER={your email's password}
+    export PASSWORD={your email}
+<p>When you want to run code, make sure you are in the bash shell. To enter the bash shell, run <code>bash</code> in your terminal.</p>
 
 <h2>Cloning</h2>
 <p>Clone this repo and cd to it</p>
@@ -34,29 +59,12 @@ This list is constantly changing and being added to, because it's still in devel
 <img src="README images/LessSecureAppAcess.png" style="vertical-align:middle"/>
 </div>
 
-<h2>Environment Variables</h2>
-<p>Environment variables are used for security purposes. You don't want people seeing your email credentials or your bot token. If someone gets your bot token, they have full control over your bot.</p>
-  <p><b>Windows</b><br>
-Change the value of the environment variables to your email credentials and your bot token. Make sure there are no spaces between <kbd>=</kbd> and the other characters next to it. </p>
-
 ```
 DISCORD_BOT_SECRET={bot token}
 EMAIL={your email}
 PASSWORD={your email's password}
 RECIEVER={your email}
 ```
-<p><b>Mac</b></p>
-<p>For mac, you have to use the <code>export</code> command. To make environment variables permanent, make .bashrc.</p>
-
-    nano ~/.bashrc
-<p>Put in your credentials and bot token.</p>
-
-    export DISCORD_BOT_SECRET={bot token}
-    export EMAIL={your email}
-    export RECIEVER={your email's password}
-    export PASSWORD={your email}
-<p>When you want to run code, make sure you are in the bash shell. To enter the bash shell, run <code>bash</code> in your terminal.</p>
-
 <h2>Website</h2>
 <p>On GadhaBot's website, you can view features, versions, and more.<br>
 <a href="https://gadhabot.gadhagod.repl.co/">GadhaBot's website</a><br>
@@ -67,13 +75,13 @@ RECIEVER={your email}
 <details>
   <summary>Necessary packages</summary>
   <ul>
-    <li>flask</li>
     <li>discord</li>
     <li>countryinfo</li>
     <li>beautifulsoup4</li>
     <li>feedparser</li>
     <li>requests</li>
     <li>google</li>
+    <li>pygithub</li>
   </ul>
 </details>
 
@@ -88,7 +96,7 @@ RECIEVER={your email}
 <p>Open the repo on your computer.</p>
 
     cd GadhaBot
-<p>If you are on mac, ignore the rest of these steps. </p>
+<p>If you are on mac or linux, ignore the rest of these steps. </p>
 <p>Edit the .env file</p>
 
     nano .env
