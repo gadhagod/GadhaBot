@@ -19,16 +19,8 @@ This list is constantly changing and being added to, because it's still in devel
   <li>Super-fast results</li>
 </ul>
 
-<h2>Creating the Bot</h2>
-<p>First, you have to create your bot. To do this, go to the <a href="https://discord.com/developers/applications">Discord Developer Portal</a> and click <kbd>New Application</kbd> on the top right of the page. Now name your application and hit <kbd>Create</kbd>.</p>
-<div align="center">
-<img src="README images/CreateApplication.png" style="vertical-align:middle"/>
-</div> <p> Go to the <kbd>bot</kbd> tab and click <kbd>Add Bot</kbd>.</p>
-<div align="center"><img src="README images/AddBot.png" style="vertical-align:middle"/></div>
-<p>Name your bot and chose an icon. To copy your bot token, click <kbd>copy</kbd>. You will need your bot token to control your bot from python.</p>
-<div align="center">
-<img src="README images/BotToken.png" style="vertical-align:middle"/>
-</div>
+<h2>Creating a Bot</h2>
+<p>First, you have to create a bot. Click <a href="discord.md">here</a> to learn how to create a bot.</p>
 
 <h2>Cloning</h2>
 <p>Clone this repo and cd to it</p>
@@ -63,7 +55,7 @@ RECIEVER={your email}
     export EMAIL={your email}
     export RECIEVER={your email's password}
     export PASSWORD={your email}
-<p>When you want to run discordbot.py, make sure you are in the bash shell. To enter the bash shell, run <code>bash</code> in your terminal.</p>
+<p>When you want to run code, make sure you are in the bash shell. To enter the bash shell, run <code>bash</code> in your terminal.</p>
 
 <h2>Website</h2>
 <p>On GadhaBot's website, you can view features, versions, and more.<br>
@@ -101,12 +93,7 @@ RECIEVER={your email}
 
     nano .env
 <p>Put in your email credentials and bot token.<br>
-Exit the editor by pressing <kbd>^</kbd> and <kbd>x</kbd> at the same time.<br>
-Run discordbot.py</p>
-
-    python3 discordbot.py
-
-<br><br>
+Exit the editor by pressing <kbd>^</kbd> and <kbd>x</kbd> at the same time.</p>
 
 <p align="center">
   <a href="http://gadhagod.repl.co/"><img src="Logos/logo.png" legnth=40% width=40%></a>

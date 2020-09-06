@@ -15,6 +15,9 @@ View the source code of this bot
 !lastUpdated
 See when this bot was last updated
 
+!issue / !report / !suggest <issue/suggestions>
+Write a suggestion or report a problem
+
 !covidCases
 See how many covid-19 cases there are globally
 

@@ -8,6 +8,7 @@ from news import headlines
 import countries
 from easyemail import sendemail
 from search import gsearch
+from issues import issuecreate
 
 varlastupdate = last_update()
 varlastupdate = str(varlastupdate)
@@ -21,6 +22,7 @@ class MyClient(discord.Client):
 		print("Connected to server: " + varlastupdate)
 
 	async def on_message(self, message):
+		sender = message.author.name
 		if message.content.lower() == '!commands' or (message.content).lower() == '!gadhacommands':
 			await message.channel.send(messages.commands().format(message))
 			sendemail(email, reciever, password, 'GadhaBot query', 'GadhaBot commands query from ' + str(message.author))
@@ -70,6 +72,19 @@ class MyClient(discord.Client):
 			content = content.replace('!search ','')
 			await message.channel.send(gsearch(content))
 			sendemail(email, reciever, password, 'GadhaBot', 'GadhaBot google search query')
+
+		if (message.content.lower()).startswith('!issue') or (message.content.lower()).startswith('!report') or (message.content.lower()).startwith('!suggest'):
+			content = message.content
+			content = content.lower()
+			content = content.replace('!suggest', '')
+			content = content.replace('!suggest ', '')
+			content = content.replace('!issue', '')
+			content = content.replace('!report', '')
+			content = content.replace('!issue ', '')
+			content = content.replace('!report ', '')
+			returned = issuecreate(sender, content)
+			await message.channel.send(returned.format(message))
+			sendemail(email, reciever, password, 'GadhaBot', 'GadhaBot issue query')
 
 client = MyClient()
 keep_running()
