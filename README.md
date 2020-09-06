@@ -59,12 +59,6 @@ Change the values of the environment variables in file .env to your email creden
 <img src="README images/LessSecureAppAcess.png" style="vertical-align:middle"/>
 </div>
 
-```
-DISCORD_BOT_SECRET={bot token}
-EMAIL={your email}
-PASSWORD={your email's password}
-RECIEVER={your email}
-```
 <h2>Website</h2>
 <p>On GadhaBot's website, you can view features, versions, and more.<br>
 <a href="https://gadhabot.gadhagod.repl.co/">GadhaBot's website</a><br>
