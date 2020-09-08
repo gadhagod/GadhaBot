@@ -17,6 +17,7 @@ See when this bot was last updated
 
 !issue / !report / !suggest <issue/suggestions>
 Write a suggestion or report a problem
+NOTE: Your username will be displayed on GitHub
 
 !covidCases
 See how many covid-19 cases there are globally
