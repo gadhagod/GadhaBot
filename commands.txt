@@ -35,3 +35,6 @@ Find BBC headlines
 
 !googleSearch / !search <query>
 Do a google search
+
+!weather <city>
+Find the current temperature, today's high, today's low, humidity, and a description of the weather
