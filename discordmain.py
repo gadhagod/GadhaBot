@@ -8,6 +8,7 @@ import countries
 from easyemail import sendemail
 from search import gsearch
 from issues import issuecreate
+from weather import weather
 
 varlastupdate = last_update()
 varlastupdate = str(varlastupdate)
@@ -72,7 +73,7 @@ class MyClient(discord.Client):
 			await message.channel.send(gsearch(content))
 			sendemail(email, reciever, password, 'GadhaBot', 'GadhaBot google search query')
 
-		if (message.content.lower()).startswith('!issue') or (message.content.lower()).startswith('!report') or (message.content.lower()).startwith('!suggest'):
+		if (message.content.lower()).startswith('!issue') or (message.content.lower()).startswith('!report') or (message.content.lower()).startswith('!suggest'):
 			content = message.content
 			content = content.lower()
 			content = content.replace('!suggest', '')
@@ -81,9 +82,19 @@ class MyClient(discord.Client):
 			content = content.replace('!report', '')
 			content = content.replace('!issue ', '')
 			content = content.replace('!report ', '')
-			returned = issuecreate(sender, content)
-			await message.channel.send(returned.format(message))
+			await message.channel.send(issuecreate(sender, content).format(message))
 			sendemail(email, reciever, password, 'GadhaBot', 'GadhaBot issue query')
+
+		if message.content.lower().startswith('!weather'):
+			content = message.content
+			content = content.replace('!weather', '')
+			content = content.replace('!weather ', '')
+			if weather(content) == 'Please specify city.':
+	                        await message.channel.send(weather(content))
+			else:
+				description, temp, feels_like, maxtemp, mintemp, humidity = weather(content)
+				x = str(description + temp + feels_like + maxtemp + mintemp + humidity)
+				await message.channel.send(x)
 
 client = MyClient()
 token = os.environ.get("DISCORD_BOT_SECRET")
