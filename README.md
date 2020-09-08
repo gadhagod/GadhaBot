@@ -25,16 +25,19 @@ This list is constantly changing and being added to, because it's still in devel
     git clone https://github.com/gadhagod/GadhaBot
     cd GadhaBot
 
+<h2>APIs & Tokens</h2>
+To create a discord bot and find your bot token, click <a href="DiscordBotCreate.md">here</a>.<br> To create a GitHub API token, click <a href="GitHubAPI.md">here</a>.<br></p> To get a OpenWeather token, click <a href="OpenWeatherAPI.md">here</a>.</p>
+
 <h2>Environment Variables</h2>
-<p>Environment variables are used for security purposes. You don't want people seeing your email credentials, GitHub token, or bot token. </p><br>
-To create a discord bot and find your bot token, click <a href="DiscordBotCreate.md">here</a>.<br> To create a GitHub API token, click <a href="GitHubAPI.md">here</a>.</p>
+<p>Environment variables are used for security purposes. You don't want people seeing your email credentials or API tokens. </p><br>
 <p><b>Windows</b><br>
-Change the values of the environment variables in file .env to your email credentials, GitHub token, and your bot token. Make sure there are no spaces between <kbd>=</kbd> and the other characters next to it. 
+Change the values of the environment variables in file .env to your email credentials and tokens. Make sure there are no spaces between <kbd>=</kbd> and the other characters next to it. 
   
     nano .env
  <br>
  
     DISCORD_BOT_SECRET={bot token}
+    WEATHER_SECRET={openweathermap token}
     GITHUB_SECRET={github token}
     EMAIL={your email}
     PASSWORD={your email's password}
@@ -44,9 +47,10 @@ Change the values of the environment variables in file .env to your email creden
 <p>For mac or linux, you have to use the <code>export</code> command. To make environment variables permanent, create/edit file .bashrc.</p>
 
     nano ~/.bashrc
-<p>Put in your credentials and bot token.</p>
+<p>Export your credentials and tokens.</p>
 
     export DISCORD_BOT_SECRET={bot token}
+    export WEATHER_SECRET={openweathermap token}
     export GITHUB_SECRET={github token}
     export EMAIL={your email}
     export RECIEVER={your email's password}
@@ -62,7 +66,7 @@ Change the values of the environment variables in file .env to your email creden
 <h2>Website</h2>
 <p>On GadhaBot's website, you can view features, versions, and more.<br>
 <a href="https://gadhabot.gadhagod.repl.co/">GadhaBot's website</a><br>
-<a href="https://github.com/gadhagod/GadhaBot/tree/master/Website">GadhaBot's website source code</a>
+<a href="https://github.com/gadhagod/GadhaBot/tree/master/WebsiteSubPages">GadhaBot's website source code</a>
 
 <h2>Download & Run</h2>
 <p><h4>Packages</h4></p>
