@@ -23,5 +23,4 @@ def weather(city):
         strmintemp = 'Today\'s low: ' + str(mintemp) + '°C\n'
         strhumidity = 'Humidity: ' + str(humidity) + '%'
 
-
         return strdescription, strtemp, strfeels_like, strmaxtemp, strmintemp, strhumidity
