@@ -30,7 +30,7 @@ To create a discord bot and find your bot token, click <a href="DiscordBotCreate
 
 <h2>Environment Variables</h2>
 <p>Environment variables are used for security purposes. You don't want people seeing your email credentials or API tokens. </p><br>
-<p><b>Windows</b><br>
+<p><b>Windows</b>
 Change the values of the environment variables in file .env to your email credentials and tokens. Make sure there are no spaces between <kbd>=</kbd> and the other characters next to it. 
   
     nano .env
@@ -109,7 +109,7 @@ Now you can close your terminal and the bot will remain running. If you want to 
 This should return something similar to this (maybe along with other processes):
 
     ubuntu   25678 25026  3 19:23 pts/1    00:00:00 python3 discordmain.py
-The first number, or the second column's value is the process id. To kill the process, run <code>kill {process id}</code>. Now the bot is offline. You can do this if you need to make changes to the bot.
+The second column's value is the process id. To kill the process, run <code>kill {process id}</code>. Now the bot is offline. You can do this if you need to make changes to the bot.
 <br><p align="center">
   <a href="http://gadhagod.repl.co/"><img src="Logos/logo.png" legnth=40% width=40%></a>
 </p>
