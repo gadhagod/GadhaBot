@@ -26,7 +26,7 @@ This list is constantly changing and being added to, because it's still in devel
     cd GadhaBot
 
 <h2>APIs & Tokens</h2>
-To create a discord bot and find your bot token, click <a href="DiscordBotCreate.md">here</a>.<br> To create a GitHub API token, click <a href="GitHubAPI.md">here</a>.<br></p> To get a OpenWeather token, click <a href="OpenWeatherAPI.md">here</a>.</p>
+To create a discord bot and find your bot token, click <a href="DiscordBotCreate.md">here</a>.<br> To create a GitHub API token, click <a href="GitHubAPI.md">here</a>.<br>To get a, OpenWeather token, click <a href="OpenWeatherAPI.md">here</a>.</p>
 
 <h2>Environment Variables</h2>
 <p>Environment variables are used for security purposes. You don't want people seeing your email credentials or API tokens. </p><br>
@@ -68,7 +68,7 @@ Change the values of the environment variables in file .env to your email creden
 <a href="https://gadhabot.gadhagod.repl.co/">GadhaBot's website</a><br>
 <a href="https://github.com/gadhagod/GadhaBot/tree/master/WebsiteSubPages">GadhaBot's website source code</a>
 
-<h2>Download & Run</h2>
+<h2>Run the Bot</h2>
 <p><h4>Packages</h4></p>
 <details>
   <summary>Necessary packages</summary>
@@ -90,17 +90,26 @@ Change the values of the environment variables in file .env to your email creden
 <p>or</p>
 
     pip3 install {package name}
-<p><b>Run</p></b>
-<p>Open the repo on your computer.</p>
 
-    cd GadhaBot
-<p>If you are on mac or linux, ignore the rest of these steps. </p>
-<p>Edit the .env file</p>
+<h4>AWS</h4>
+If your run discordmain.py normally, your bot will go offline when you close the terminal or your computer goes to sleep. To solve this, we use an AWS machine.<br> Create an AWS account. We will only use the free tier on AWS, so you won't be charged for anything. This <a href="https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html">tutorial</a> tells you how to launch an E2C instance on AWS. Select an Ubuntu machine. <br>
+<div align="center">
+<img src="README images/UbuntuAWS.png" style="vertical-align:middle"/>
+</div>
+<br>After launching, ssh to your new machine using the .pem file you downloaded
 
-    nano .env
-<p>Put in your email credentials and bot token.<br>
-Exit the editor by pressing <kbd>^</kbd> and <kbd>x</kbd> at the same time.</p>
+    ssh -i "something.pem" ubuntu@ipaddress
+<h4>Run</h4>
+Run this command to run your ssh terminal.
 
-<p align="center">
+    nohup python3 discordmain.py &
+Now you can close your terminal and the bot will remain running. If you want to stop running, run these commands:
+
+    ps -ef | grep discordmain.py
+This should return something similar to this (maybe along with other processes):
+
+    ubuntu   25678 25026  3 19:23 pts/1    00:00:00 python3 discordmain.py
+The first number, or the second column's value is the process id. To kill the process, run <code>kill {process id}</code>. Now the bot is offline. You can do this if you need to make changes to the bot.
+<br><p align="center">
   <a href="http://gadhagod.repl.co/"><img src="Logos/logo.png" legnth=40% width=40%></a>
 </p>
