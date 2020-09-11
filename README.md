@@ -27,7 +27,7 @@ This list is constantly changing and being added to, because it's still in devel
     cd GadhaBot
 
 <h2>APIs & Tokens</h2>
-To create a discord bot and find your bot token, click <a href="DiscordBotCreate.md">here</a>.<br> To create a GitHub API token, click <a href="GitHubAPI.md">here</a>.<br>To get a, OpenWeather token, click <a href="OpenWeatherAPI.md">here</a>.</p>
+To create a discord bot and find your bot token, click <a href="DiscordBotCreate.md">here</a>.<br> To create a GitHub API token, click <a href="GitHubAPI.md">here</a>.<br>To get an OpenWeather token, click <a href="OpenWeatherAPI.md">here</a>.</p>
 
 <h2>Environment Variables</h2>
 <p>Environment variables are used for security purposes. You don't want people seeing your email credentials or API tokens. </p><br>
@@ -69,7 +69,7 @@ Change the values of the environment variables in file .env to your email creden
 <a href="https://gadhabot.gadhagod.repl.co/">GadhaBot's website</a><br>
 <a href="https://github.com/gadhagod/GadhaBot/tree/master/WebsiteSubPages">GadhaBot's website source code</a>
 
-<h2>Run the Bot</h2>
+<h2>Run</h2>
 <p><h4>Packages</h4></p>
 <details>
   <summary>Necessary packages</summary>
