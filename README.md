@@ -103,7 +103,7 @@ If your run discordmain.py normally, your bot will go offline when you close the
 <h4>Run</h4>
 Run this command to run your ssh terminal.
 
-    nohup python3 discordmain.py &
+    nohup python3 src/discordmain.py &
 Now you can close your terminal and the bot will remain running. If you want to stop running, run these commands:
 
     ps -ef | grep discordmain.py

@@ -1,5 +1,4 @@
 import discord
-import covidbackend
 import messages
 import os
 from timestamp import last_update

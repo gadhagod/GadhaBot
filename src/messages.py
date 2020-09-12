@@ -1,4 +1,4 @@
-import covidbackend
+import corona
 
 def help():
   print("Help query")
@@ -10,11 +10,11 @@ def invite():
 
 class covid():
   def __init__(self):
-    self.varcases, self.vardeaths = covidbackend.data_return()
+    self.varcases, self.vardeaths = corona.data_return()
 
   def cases(self):
     print("Covid Cases query")
-    return self.varcases + " global cases"
+    return self.varcases + "global cases"
 
   def deaths(self):
     print("Covid Deaths query")
@@ -22,7 +22,7 @@ class covid():
 
 def commands():
   print("Commands query")
-  commandslist=open("commands.txt", "r")
+  commandslist=open("../commands.txt", "r")
   commandslist = commandslist.read()
   return commandslist
 
