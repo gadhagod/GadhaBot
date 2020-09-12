@@ -4,7 +4,7 @@ import os
 from timestamp import last_update
 from news import headlines
 import countries
-from easyemail import sendemail
+from email import sendemail
 from search import gsearch
 from issues import issuecreate
 from weather import weather
