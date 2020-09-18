@@ -34,8 +34,11 @@ Find the capital of a country
 !news
 Find BBC headlines
 
-!googleSearch / !search <query>
+!googleSearch <query> / !search <query>
 Do a google search
 
-!weather <city>
-Find the current temperature, today's high, today's low, humidity, and a description of the weather
+!city <city>
+Save a city for !weather
+
+!weather
+Find the current temperature, today's high, today's low, humidity, and more in the city stored from !city
