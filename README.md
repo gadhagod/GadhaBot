@@ -26,14 +26,15 @@ This list is constantly changing and being added to, because it's still in devel
     git clone https://github.com/gadhagod/GadhaBot
     cd GadhaBot
 
-<h2>APIs & Tokens</h2>
+<h2>APIs & Services</h2>
 To create a discord bot and find your bot token, click <a href="DiscordBotCreate.md">here</a>.<br> 
 To create a GitHub API token, click <a href="GithubAPI.md">here</a>.
-<br>To get an OpenWeather token, click <a href="OpenWeatherAPI.md">here</a>.</p>
+<br>To get an OpenWeather token, click <a href="OpenWeatherAPI.md">here</a>.<br>
+To setup your Rockset database, click <a href="Rockset.md">here</a>
 
 <h2>Environment Variables</h2>
 <p>Environment variables are used for security purposes. You don't want people seeing your email credentials or API tokens. </p><br>
-<p><b>Windows</b>
+<p><b>Windows</b><br>
 Change the values of the environment variables in file .env to your email credentials and tokens. Make sure there are no spaces between <kbd>=</kbd> and the other characters next to it. 
   
     nano .env
