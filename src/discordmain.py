@@ -8,6 +8,7 @@ from mail import sendemail
 from search import gsearch
 from issues import issuecreate
 from weather import weather
+import city
 
 varlastupdate = last_update()
 varlastupdate = str(varlastupdate)
@@ -22,6 +23,7 @@ class MyClient(discord.Client):
 
 	async def on_message(self, message):
 		sender = message.author.name
+		userid = message.author.id
 		if message.content.lower() == '!commands' or (message.content).lower() == '!gadhacommands':
 			await message.channel.send(messages.commands().format(message))
 			sendemail(email, reciever, password, 'GadhaBot query', 'GadhaBot commands query from ' + str(message.author))
@@ -84,16 +86,23 @@ class MyClient(discord.Client):
 			await message.channel.send(issuecreate(sender, content).format(message))
 			sendemail(email, reciever, password, 'GadhaBot', 'GadhaBot issue query')
 
-		if message.content.lower().startswith('!weather'):
-			content = message.content
-			content = content.replace('!weather', '')
-			content = content.replace('!weather ', '')
-			if weather(content) == 'Please specify city.':
-	                        await message.channel.send(weather(content))
+		if message.content.lower() == '!weather':
+			data = weather(userid)
+			if data == False:
+				await message.channel.send('Please set your city. Set your city by typing \'!city {your city\'s name}')
 			else:
-				description, temp, feels_like, maxtemp, mintemp, humidity = weather(content)
+				description, temp, feels_like, maxtemp, mintemp, humidity = data
 				x = str(description + temp + feels_like + maxtemp + mintemp + humidity)
 				await message.channel.send(x)
+
+		if message.content.lower().startswith('!city'):
+			content = message.content
+			content = content.replace('!city ', '')
+			content = content.replace('!city', '')
+			city.store(userid, content)
+
+		if message.content.lower().startswith('!get'):
+			await message.channel.send(city.get(userid))		
 
 client = MyClient()
 token = os.environ.get("DISCORD_BOT_SECRET")
