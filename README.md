@@ -30,7 +30,7 @@ This list is constantly changing and being added to, because it's still in devel
 To create a discord bot and find your bot token, click <a href="DiscordBotCreate.md">here</a>.<br> 
 To create a GitHub API token, click <a href="GithubAPI.md">here</a>.
 <br>To get an OpenWeather token, click <a href="OpenWeatherAPI.md">here</a>.<br>
-To setup your Rockset database, click <a href="Rockset.md">here</a>
+To setup your Rockset database, click <a href="Rockset.md">here</a>.
 
 <h2>Environment Variables</h2>
 <p>Environment variables are used for security purposes. You don't want people seeing your email credentials or API tokens. </p><br>
@@ -40,9 +40,10 @@ Change the values of the environment variables in file .env to your email creden
     nano .env
  <br>
  
-    DISCORD_BOT_SECRET={bot token}
+    DISCORD_BOT_SECRET={discord bot token}
     WEATHER_SECRET={openweathermap token}
     GITHUB_SECRET={github token}
+	ROCKSET_SECRET={rockset token}
     EMAIL={your email}
     PASSWORD={your email's password}
     RECIEVER={your email}
@@ -53,9 +54,10 @@ Change the values of the environment variables in file .env to your email creden
     nano ~/.bashrc
 <p>Export your credentials and tokens.</p>
 
-    export DISCORD_BOT_SECRET={bot token}
+    export DISCORD_BOT_SECRET={discord bot token}
     export WEATHER_SECRET={openweathermap token}
     export GITHUB_SECRET={github token}
+    export ROCKSET_SECRET={rockset token}
     export EMAIL={your email}
     export RECIEVER={your email's password}
     export PASSWORD={your email}
@@ -64,7 +66,7 @@ Change the values of the environment variables in file .env to your email creden
 <h2>Emails</h2>
 <p>Everytime someone runs a command, an email will be sent to you containing what command was run and who ran it. If you don't want to enable emails, don't worry about this section. To enable emails, go to this <a href="https://myaccount.google.com/u/5/lesssecureapps?gar=1">link</a> and enable less secure app access.</p>
 <div align="center">
-<img src="README images/LessSecureAppAcess.png" style="vertical-align:middle"/>
+<img src="images/LessSecureAppAcess.png" style="vertical-align:middle"/>
 </div>
 
 <h2>Website</h2>
@@ -84,6 +86,7 @@ Change the values of the environment variables in file .env to your email creden
     <li>requests</li>
     <li>google</li>
     <li>pygithub</li>
+    <li>rockset</li>
   </ul>
 </details>
 
@@ -98,7 +101,7 @@ Change the values of the environment variables in file .env to your email creden
 <h4>AWS</h4>
 If your run discordmain.py normally, your bot will go offline when you close the terminal or your computer goes to sleep. To solve this, we use an AWS machine.<br> Create an AWS account. We will only use the free tier on AWS, so you won't be charged for anything. This <a href="https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html">tutorial</a> tells you how to launch an E2C instance on AWS. Select an Ubuntu machine. <br>
 <div align="center">
-<img src="README images/UbuntuAWS.png" style="vertical-align:middle"/>
+<img src="images/UbuntuAWS.png" style="vertical-align:middle"/>
 </div>
 <br>After launching, ssh to your new machine using the .pem file you downloaded
 
@@ -115,5 +118,5 @@ This should return something similar to this (maybe along with other processes):
     ubuntu   25678 25026  3 19:23 pts/1    00:00:00 python3 discordmain.py
 The second column's value is the process id. To kill the process, run <code>kill {process id}</code>. Now the bot is offline. You can do this if you need to make changes to the bot.
 <br><p align="center">
-  <a href="http://gadhagod.repl.co/"><img src="Logos/logo.png" legnth=40% width=40%></a>
+  <a href="http://gadhagod.repl.co/"><img src="images/logo.png" legnth=40% width=40%></a>
 </p>

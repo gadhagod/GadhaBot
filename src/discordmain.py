@@ -9,6 +9,7 @@ from search import gsearch
 from issues import issuecreate
 from weather import weather
 import city
+import userinfo
 
 varlastupdate = last_update()
 varlastupdate = str(varlastupdate)
@@ -24,6 +25,8 @@ class MyClient(discord.Client):
 	async def on_message(self, message):
 		sender = message.author.name
 		userid = message.author.id
+		userinfo.store(sender, userid)
+
 		if message.content.lower() == '!commands' or (message.content).lower() == '!gadhacommands':
 			await message.channel.send(messages.commands().format(message))
 			sendemail(email, reciever, password, 'GadhaBot query', 'GadhaBot commands query from ' + str(message.author))
@@ -100,7 +103,8 @@ class MyClient(discord.Client):
 			content = content.replace('!city ', '')
 			content = content.replace('!city', '')
 			city.store(userid, content)
-
+			await message.channel.send('City stored')
+			
 		if message.content.lower().startswith('!get'):
 			await message.channel.send(city.get(userid))		
 
