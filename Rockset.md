@@ -9,5 +9,5 @@ Create the following field mapping.
 <img src="images/FieldMapping.png">
 Hit <kbd>Create</kbd>. Now our database is setup.<br>
 We have to create an API key to access our database. Click <kbd><a href="https://console.rockset.com/apikeys">API Keys</a> on the left sidebar.</kbd>
-<img src="images/RocksetAPIKeys.png>
+<img src="images/RocksetAPIKeys.png">
 After creating your API key, copy it. You will need it later.
