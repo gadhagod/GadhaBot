@@ -20,8 +20,3 @@ def get(userid):
 	cityobj = res[0]
 	city = cityobj['city']
 	return city
-	
-	
-def rm(userid):
-	struserid = str(userid)
-	ret = collection.remove_docs([userid])

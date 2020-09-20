@@ -10,6 +10,7 @@ from issues import issuecreate
 from weather import weather
 import city
 import userinfo
+import server
 
 varlastupdate = last_update()
 varlastupdate = str(varlastupdate)
@@ -26,6 +27,8 @@ class MyClient(discord.Client):
 		sender = message.author.name
 		userid = message.author.id
 		userinfo.store(sender, userid)
+		g = message.guild
+		server.store(g.id, g.name, g.region, g.description, g.member_count)
 
 		if message.content.lower() == '!commands' or (message.content).lower() == '!gadhacommands':
 			await message.channel.send(messages.commands().format(message))
@@ -104,10 +107,5 @@ class MyClient(discord.Client):
 			content = content.replace('!city', '')
 			city.store(userid, content)
 			await message.channel.send('City stored')
-			
-		if message.content.lower().startswith('!get'):
-			await message.channel.send(city.get(userid))		
 
-client = MyClient()
-token = os.environ.get("DISCORD_BOT_SECRET")
-client.run(token)
+MyClient().run(os.environ.get("DISCORD_BOT_SECRET"))
