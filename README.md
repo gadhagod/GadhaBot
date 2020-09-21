@@ -73,7 +73,7 @@ Change the values of the environment variables in file .env to your email creden
 <h2>Website</h2>
 <p>On GadhaBot's website, you can view features, versions, and more.<br>
 <a href="https://gadhabot.gadhagod.repl.co/">GadhaBot's website</a><br>
-<a href="https://github.com/gadhagod/GadhaBot/tree/master/WebsiteSubPages">GadhaBot's website source code</a>
+<a href="https://github.com/gadhagod/GadhaBot/tree/master/website">GadhaBot's website source code</a>
 
 <h2>Run</h2>
 <p><h4>Packages</h4></p>
