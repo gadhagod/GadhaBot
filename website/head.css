@@ -1,0 +1,27 @@
+
+    * {
+      font-family: sans-serif;
+    }
+
+.btn-group button {
+  background-color: #4CAF50; 
+  border: 1px solid green; 
+  color: white; 
+
+  cursor: pointer; 
+  float: left; 
+}
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; 
+}
+
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
