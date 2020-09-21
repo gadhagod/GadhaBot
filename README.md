@@ -15,6 +15,7 @@ This list is constantly changing and being added to, because it's still in devel
   <li>Can tell you the headlines from BBC news</li>
   <li>Can give you google search results</li>
   <li>Can give you weather information about any city</li>
+  <li>Stores user and server info in a database for a personalized experience</li>
   <li>Automatically sends you an email when someone runs a command</li>
   <li>Many more commands
   <li>Super-fast results</li>
@@ -33,7 +34,7 @@ To create a GitHub API token, click <a href="GithubAPI.md">here</a>.
 To setup your Rockset database, click <a href="Rockset.md">here</a>.
 
 <h2>Environment Variables</h2>
-<p>Environment variables are used for security purposes. You don't want people seeing your email credentials or API tokens. </p><br>
+<p>Environment variables are used for security purposes. You don't want people seeing your email credentials or API tokens. </p>
 <p><b>Windows</b><br>
 Change the values of the environment variables in file .env to your email credentials and tokens. Make sure there are no spaces between <kbd>=</kbd> and the other characters next to it. 
   
@@ -80,12 +81,14 @@ Change the values of the environment variables in file .env to your email creden
   <summary>Necessary packages</summary>
   <ul>
     <li>discord</li>
+    <li>datetime</li>
     <li>countryinfo</li>
     <li>beautifulsoup4</li>
     <li>feedparser</li>
     <li>requests</li>
     <li>google</li>
     <li>pygithub</li>
+    <li>mimemultipart</li>
     <li>rockset</li>
   </ul>
 </details>
@@ -116,7 +119,7 @@ Now you can close your terminal and the bot will remain running. If you want to 
 This should return something similar to this (maybe along with other processes):
 
     ubuntu   25678 25026  3 19:23 pts/1    00:00:00 python3 discordmain.py
-The second column's value is the process id. To kill the process, run <code>kill {process id}</code>. Now the bot is offline. You can do this if you need to make changes to the bot.
+The second column's value is the process id. To kill the process, run <code>kill {process id}</code>. You can do this if you need to make changes to the bot.
 <br><p align="center">
   <a href="http://gadhagod.repl.co/"><img src="images/logo.png" legnth=40% width=40%></a>
 </p>
