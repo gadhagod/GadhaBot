@@ -2,7 +2,7 @@ import corona
 
 def help():
   print("Help query")
-  return "Hi {0.author.mention}! Thanks for using GadhaBot, by GadhaGod Electronics! I can do a lot of miscellaneous things. Type !commands to see what all I can do.\n\nThe code for this bot is open-source. View it here: https://github.com/gadhagod/GadhaBot.\n\nGadhaBot's website: https://gadhabot.gadhagod.repl.co/"
+  return "Hi {0.author.mention}! Thanks for using GadhaBot! It can do a lot of miscellaneous things. Type !commands to see what all I can do.\n\nThe code for this bot is open-source. View it here: https://github.com/gadhagod/GadhaBot.\n\nGadhaBot's website: https://gadhagod.github.io/GadhaBot/"
 
 def invite():
   print("Invite query")

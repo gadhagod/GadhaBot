@@ -1,7 +1,7 @@
 <h1 align="center">GadhaBot</h1>
 <p align="center">
   <b><a href="https://discord.com/oauth2/authorize?client_id=714911868455747629&permissions=0&scope=bot">Invite</a> | 
-    <a href="https://github.com/gadhagod/GadhaBot/blob/master/commands.txt">Commands</a> |
+    <a href="https://gadhagod.github.io/GadhaBot/">Website</a> |
     <a href="https://github.com/gadhagod/GadhaBot">Code</a>
   </b>
 </p>
@@ -71,9 +71,7 @@ Change the values of the environment variables in file .env to your email creden
 </div>
 
 <h2>Website</h2>
-<p>On GadhaBot's website, you can view features, versions, and more.<br>
-<a href="https://gadhabot.gadhagod.repl.co/">GadhaBot's website</a><br>
-<a href="https://github.com/gadhagod/GadhaBot/tree/master/website">GadhaBot's website source code</a>
+<a href="https://gadhagod.github.io/GadhaBot/">GadhaBot's website</a><br>
 
 <h2>Run</h2>
 <p><h4>Packages</h4></p>
