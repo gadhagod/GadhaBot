@@ -24,7 +24,9 @@ def commands():
   print("Commands query")
   commandslist=open("../commands.txt", "r")
   commandslist = commandslist.read()
-  return commandslist
+  part1 = commandslist[:len(commandslist) // 2]
+  part2 = commandslist[len(commandslist) // 2:]
+  return part1, part2
 
 def code():
   print('Source code query')

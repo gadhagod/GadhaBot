@@ -57,8 +57,12 @@ class MyClient(discord.Client):
 			await message.channel.send((covidobj.deaths()).format(message))
 			sendemail(email, reciever, password, 'GadhaBot', 'GadhaBot covid deaths query from ' + str(message.author))
 
-		if message.content.lower() == '!news' or (message.content).lower() == '!headlines':
-			await message.channel.send(str(headlines()).format(message))
+		if message.content.lower().startswith('!news') or message.content.lower().startswith('!headlines'):
+			content = message.content.lower()
+			content = content.replace(' ', '')
+			content = content.replace('!news', '')
+			print(content)
+			await message.channel.send(str(headlines(content)))
 			sendemail(email, reciever, password, 'GadhaBot', 'GadhaBot news query from ' + str(message.author))
 			
 		if (message.content.lower()).startswith('!population'):
