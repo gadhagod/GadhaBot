@@ -31,7 +31,7 @@ class MyClient(discord.Client):
 		server.store(g.id, g.name, g.region, g.description, g.member_count)
 
 		if message.content.lower() == '!commands' or (message.content).lower() == '!gadhacommands':
-			await message.channel.send(messages.commands().format(message))
+			await message.channel.send(messages.commands())
 			sendemail(email, reciever, password, 'GadhaBot query', 'GadhaBot commands query from ' + str(message.author))
 
 		if message.content.lower() == '!help' or (message.content).lower() == '!gadhahelp':
