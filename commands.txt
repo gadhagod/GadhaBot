@@ -1,4 +1,4 @@
-<> = required, / = alternate command call
+<> = required, [] = optional, / = alternate command call
 
 !help / !gadhaHelp
 View info on this bot
@@ -31,7 +31,7 @@ Find the population of a country
 !capital <country>
 Find the capital of a country
 
-!news
+!news [# of articles, default: 5]
 Find BBC headlines
 
 !googleSearch <query> / !search <query>
