@@ -1,4 +1,4 @@
-### All Your Morning Needs
+### What GadhaBot is For
 
 Answer all these questions with one message:
 - What's on the headlines?
