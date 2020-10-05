@@ -9,7 +9,7 @@ def issuecreate(user, inbody):
 	if inbody == '':
 		return 'You did not include your issue\'s text'
 
-	repo = g.get_repo("GadhaGod/GadhaBot")
+	repo = g.get_repo("gadhagod/GadhaBot")
 	i = repo.create_issue(
 		title='Issue created by discord user ' + user,
 		body = ('From discord user ' + user + ':\n' + inbody),
