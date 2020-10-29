@@ -119,5 +119,5 @@ This should return something similar to this (maybe along with other processes):
     ubuntu   25678 25026  3 19:23 pts/1    00:00:00 python3 discordmain.py
 The second column's value is the process id. To kill the process, run <code>kill {process id}</code>. You can do this if you need to make changes to the bot.
 <br><p align="center">
-  <a href="http://gadhagod.repl.co/"><img src="images/logo.png" legnth=40% width=40%></a>
+  <a href="gadhagod.github.io"><img src="images/logo.png" legnth=40% width=40%></a>
 </p>
