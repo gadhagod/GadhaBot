@@ -22,6 +22,7 @@ password = os.environ.get("PASSWORD")
 class MyClient(discord.Client):
 	async def on_ready(self):
 		print("Connected to server: " + varlastupdate)
+		await self.change_presence(activity=discord.Game(name='!help / !commands'))
 
 	async def on_message(self, message):
 		sender = message.author.name
