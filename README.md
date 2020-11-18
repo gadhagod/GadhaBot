@@ -8,7 +8,6 @@
 
 <hr>
 <h2>Features</h2>
-This list is constantly changing and being added to, because it's still in developement. Here are the features so far:
 <ul>
   <li>Can tell you how many COVID-19 deaths and cases there are real-time</li>
   <li>Can tell you the population and capital of any country</li>
@@ -74,30 +73,10 @@ Change the values of the environment variables in file .env to your email creden
 <a href="https://gadhagod.github.io/GadhaBot/">GadhaBot's website</a><br>
 
 <h2>Run</h2>
-<p><h4>Packages</h4></p>
-<details>
-  <summary>Necessary packages</summary>
-  <ul>
-    <li>discord</li>
-    <li>datetime</li>
-    <li>countryinfo</li>
-    <li>beautifulsoup4</li>
-    <li>feedparser</li>
-    <li>requests</li>
-    <li>google</li>
-    <li>pygithub</li>
-    <li>mimemultipart</li>
-    <li>rockset</li>
-  </ul>
-</details>
+<p><h4>Dependencies</h4></p>
+To install the dependencies, run...
 
-<p>You may already have some packages already installed or some default ones may have beem removed on your system.</p>
-</p>To install packages:</p>
-
-    pip install {package name}
-<p>or</p>
-
-    pip3 install {package name}
+    pip3 install -U requirements.txt
 
 <h4>AWS</h4>
 If your run discordmain.py normally, your bot will go offline when you close the terminal or your computer goes to sleep. To solve this, we use an AWS machine.<br> Create an AWS account. We will only use the free tier on AWS, so you won't be charged for anything. This <a href="https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html">tutorial</a> tells you how to launch an E2C instance on AWS. Select an Ubuntu machine. <br>
@@ -110,13 +89,13 @@ If your run discordmain.py normally, your bot will go offline when you close the
 <h4>Run</h4>
 Run this command to run your ssh terminal.
 
-    nohup python3 src/discordmain.py &
+    nohup python3 src/main.py &
 Now you can close your terminal and the bot will remain running. If you want to stop running, run these commands:
 
-    ps -ef | grep discordmain.py
+    ps -ef | grep main.py
 This should return something similar to this (maybe along with other processes):
 
-    ubuntu   25678 25026  3 19:23 pts/1    00:00:00 python3 discordmain.py
+    ubuntu   25678 25026  3 19:23 pts/1    00:00:00 python3 main.py
 The second column's value is the process id. To kill the process, run <code>kill {process id}</code>. You can do this if you need to make changes to the bot.
 <br><p align="center">
   <a href="gadhagod.github.io"><img src="images/logo.png" legnth=40% width=40%></a>

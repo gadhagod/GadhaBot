@@ -62,8 +62,10 @@ class MyClient(discord.Client):
 			content = message.content.lower()
 			content = content.replace(' ', '')
 			content = content.replace('!news', '')
-			print(content)
-			await message.channel.send(str(headlines(content)))
+			if content == '':
+				await message.channel.send(str(headlines()))
+			else:
+				await message.channel.send(str(headlines(int(content))))
 			sendemail(email, reciever, password, 'GadhaBot', 'GadhaBot news query from ' + str(message.author))
 			
 		if (message.content.lower()).startswith('!population'):
